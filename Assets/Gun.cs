@@ -5,6 +5,7 @@ public class Gun : MonoBehaviour {
 
     public float weaponDamage = 10f;
     public float range = 100f;
+    public ParticleSystem muzzleFlash;
 
     public Camera fpsCam;
 	
@@ -19,6 +20,7 @@ public class Gun : MonoBehaviour {
 
     void Shoot()
     {
+        muzzleFlash.Play();
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
