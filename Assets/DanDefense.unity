@@ -157,7 +157,7 @@ Light:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 235694601}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.94482756, g: 1, b: 0, a: 1}
@@ -728,6 +728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponDamage: 10
   range: 100
+  muzzleFlash: {fileID: 1891343618}
   fpsCam: {fileID: 104070708}
 --- !u!1 &1891343615
 GameObject:
@@ -874,7 +875,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -551966334
+  randomSeed: -1689768075
   InitialModule:
     serializedVersion: 3
     enabled: 1
