@@ -1,7 +1,8 @@
 ﻿
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Gun : MonoBehaviour {
+public class Gun : NetworkBehaviour {
 
     public float weaponDamage = 10f;
     public float range = 100f;
@@ -11,6 +12,8 @@ public class Gun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+       
 		if (Input.GetButtonDown("Fire1"))
         {
             Shoot();

@@ -14,7 +14,7 @@ public class PlayerSetup : NetworkBehaviour {
 	void Start () {
         if (!isLocalPlayer)
         {
-            for(int i = 0; i <= componetsToDisable.Length; i++)
+            for(int i = 0; i < componetsToDisable.Length; i++)
             {
                 componetsToDisable[i].enabled = false;
             }

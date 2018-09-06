@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 114626215966622598}
   - component: {fileID: 114128561047275680}
   - component: {fileID: 114563694236273196}
+  - component: {fileID: 114441168528262804}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Untagged
@@ -186,6 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4552036087179612}
   - component: {fileID: 114891095673805690}
+  - component: {fileID: 114681042230693616}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -443,6 +445,25 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &114441168528262804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1267208747, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 4552036087179612}
+  m_ChildIndex: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_MovementThreshold: 0.001
+  m_InterpolateRotation: 0.5
+  m_InterpolateMovement: 0.5
 --- !u!114 &114563694236273196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -477,6 +498,38 @@ MonoBehaviour:
   - {fileID: 11400004}
   - {fileID: 20235896778498346}
   - {fileID: 114891095673805690}
+--- !u!114 &114681042230693616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729129600505168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 198
+    i1: 69
+    i2: 63
+    i3: 142
+    i4: 31
+    i5: 129
+    i6: 71
+    i7: 68
+    i8: 216
+    i9: 185
+    i10: 78
+    i11: 90
+    i12: 109
+    i13: 31
+    i14: 153
+    i15: 66
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114848752521655714
 MonoBehaviour:
   m_ObjectHideFlags: 1
