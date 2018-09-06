@@ -7,16 +7,13 @@ public class PlayerSetup : NetworkBehaviour {
 
     [SerializeField]
     Behaviour[] componetsToDisable;
-
     Camera sceneCamera;
+    Camera fps;
+  
 
 	// Use this for initialization
 	void Start () {
-        sceneCamera = Camera.main;
-        if (sceneCamera != null)
-        {
-            sceneCamera.gameObject.SetActive(false);
-        }
+       
         if (!isLocalPlayer)
         {
             for(int i = 0; i < componetsToDisable.Length; i++)
@@ -26,7 +23,13 @@ public class PlayerSetup : NetworkBehaviour {
         }
         else
         {
-            
+             sceneCamera = Camera.main;
+             fps = gameObject.GetComponentInChildren<Camera>();
+             if (sceneCamera != null && fps != null)
+             {
+                 sceneCamera.gameObject.SetActive(false);
+                 fps.gameObject.SetActive(true);
+             }
         }
 	}
 
