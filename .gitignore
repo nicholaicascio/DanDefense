@@ -34,5 +34,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+ProjectSettings/ProjectVersion.txt
 Assets/Character Prefabs.meta
 UnityPackageManager/manifest.json
+ProjectSettings/ProjectVersion.txt
