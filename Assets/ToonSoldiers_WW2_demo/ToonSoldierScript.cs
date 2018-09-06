@@ -20,13 +20,13 @@ public class ToonSoldierScript : MonoBehaviour
         float move = Input.GetAxis("Vertical");
         anim.SetFloat("Speed", move);
 
-        bool shoot = Input.GetKey(KeyCode.Space);
+        bool shoot = Input.GetButton("Fire1");
         anim.SetBool("Shoot", shoot);
 
         bool guard = Input.GetKey(KeyCode.E);
         anim.SetBool("Guard", guard);
 
-        bool sprint = Input.GetKey(KeyCode.R);
+        bool sprint = Input.GetKey(KeyCode.LeftShift);
         anim.SetBool("Sprint", sprint);
     }
 }
