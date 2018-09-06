@@ -12,6 +12,11 @@ public class PlayerSetup : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        sceneCamera = Camera.main;
+        if (sceneCamera != null)
+        {
+            sceneCamera.gameObject.SetActive(false);
+        }
         if (!isLocalPlayer)
         {
             for(int i = 0; i < componetsToDisable.Length; i++)
@@ -21,11 +26,7 @@ public class PlayerSetup : NetworkBehaviour {
         }
         else
         {
-            sceneCamera = Camera.main;
-            if(sceneCamera != null)
-            {
-                sceneCamera.gameObject.SetActive(false);
-            }
+            
         }
 	}
 
