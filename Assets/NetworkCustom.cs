@@ -27,11 +27,12 @@ public class NetworkCustom : NetworkManager {
         if (startPos != null)
         {
             player = Instantiate(characters[selectedClass], startPos.position, startPos.rotation) as GameObject;
+            ClientScene.RegisterPrefab(player);
         }
         else
         {
             player = Instantiate(characters[selectedClass], Vector3.zero, Quaternion.identity) as GameObject;
-
+            ClientScene.RegisterPrefab(player);
         }
 
         NetworkServer.AddPlayerForConnection(conn, player, playerControllerId);
