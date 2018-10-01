@@ -558,16 +558,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 136338755514699118, guid: 6bbbc25ef37106844ab52f7a5057f57c,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 1.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 136338755514699118, guid: 6bbbc25ef37106844ab52f7a5057f57c,
-        type: 2}
-      propertyPath: m_Height
-      value: 3.77
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bbbc25ef37106844ab52f7a5057f57c, type: 2}
   m_IsPrefabAsset: 0
@@ -706,23 +696,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 904603086}
   m_CullTransparentMesh: 0
---- !u!1 &1105955241 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1201494581719936, guid: 6bbbc25ef37106844ab52f7a5057f57c,
-    type: 2}
-  m_PrefabInternal: {fileID: 723391767}
---- !u!114 &1105955242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1105955241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71f382a05945a044eb8dc2a649316a3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!1001 &1140667755
 Prefab:
   m_ObjectHideFlags: 0
