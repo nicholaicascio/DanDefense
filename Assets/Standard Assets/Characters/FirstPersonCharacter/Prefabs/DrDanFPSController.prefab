@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 114281990950062396}
   - component: {fileID: 114568578001216930}
   - component: {fileID: 114473023394212222}
+  - component: {fileID: 114982234320861758}
   m_Layer: 0
   m_Name: DrDanFPSController
   m_TagString: Untagged
@@ -2350,7 +2351,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1201494581719936}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: 1.7833263, y: -1.462761e-18, z: 0.65876895}
+  m_LocalPosition: {x: -6.906033, y: 4.0792425e-17, z: -18.371273}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4848416583233424}
@@ -3216,6 +3217,18 @@ MonoBehaviour:
   range: 100
   muzzleFlash: {fileID: 198177504879054082}
   fpsCam: {fileID: 20302720135467894}
+--- !u!114 &114982234320861758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1201494581719936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71f382a05945a044eb8dc2a649316a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!124 &124422904701734746
 Behaviour:
   m_ObjectHideFlags: 1
@@ -3233,9 +3246,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1.6
+  m_Height: 3.77
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1.87, z: 0}
 --- !u!137 &137180405660750358
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
