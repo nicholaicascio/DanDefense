@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class ToonSoldierScript : MonoBehaviour
+public class ToonSoldierScript : NetworkBehaviour
 {
     Animator anim;
 
@@ -17,6 +18,9 @@ public class ToonSoldierScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        if (!isLocalPlayer)
+            return;
+
         float move = Input.GetAxis("Vertical");
         anim.SetFloat("Speed", move);
 

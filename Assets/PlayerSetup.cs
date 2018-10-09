@@ -9,16 +9,21 @@ public class PlayerSetup : NetworkBehaviour {
     Behaviour[] componetsToDisable;
     Camera sceneCamera;
     Camera fps;
-  
 
-	// Use this for initialization
-	void Start () {
+    public override void OnStartLocalPlayer()
+    {
+        GetComponent<NetworkAnimator>().SetParameterAutoSend(0, true);
+    }
+
+    // Use this for initialization
+    void Start () {
        
         if (!isLocalPlayer)
         {
             for(int i = 0; i < componetsToDisable.Length; i++)
             {
                 componetsToDisable[i].enabled = false;
+
             }
         }
         else
@@ -32,6 +37,8 @@ public class PlayerSetup : NetworkBehaviour {
              }
         }
 	}
+
+    
 
     private void OnDisable()
     {

@@ -35,6 +35,7 @@ GameObject:
   - component: {fileID: 114248365476685690}
   - component: {fileID: 114978372953970930}
   - component: {fileID: 114328718382640260}
+  - component: {fileID: 95975946097057892}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Untagged
@@ -64,7 +65,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: -1.4081252, y: 1.23, z: -17.83}
+  m_LocalPosition: {x: -5.330407, y: 4.92, z: 5.074974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -437,6 +438,8 @@ GameObject:
   - component: {fileID: 4202102891503106}
   - component: {fileID: 95414935041210574}
   - component: {fileID: 114654073585454022}
+  - component: {fileID: 114061012496111890}
+  - component: {fileID: 114044901208675784}
   m_Layer: 0
   m_Name: ToonSoldier_WW2_demo_model
   m_TagString: Untagged
@@ -1272,6 +1275,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!95 &95975946097057892
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!108 &108077545678285650
 Light:
   m_ObjectHideFlags: 1
@@ -1309,6 +1330,57 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114044901208675784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1389277076753432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 95414935041210574}
+  m_ParameterSendBits: 15
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
+--- !u!114 &114061012496111890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1389277076753432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 85
+    i1: 55
+    i2: 250
+    i3: 68
+    i4: 122
+    i5: 202
+    i6: 171
+    i7: 244
+    i8: 26
+    i9: 184
+    i10: 11
+    i11: 37
+    i12: 23
+    i13: 227
+    i14: 86
+    i15: 104
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114244347155073534
 MonoBehaviour:
   m_ObjectHideFlags: 1
