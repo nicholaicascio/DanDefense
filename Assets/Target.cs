@@ -10,6 +10,7 @@ public class Target : MonoBehaviour {
     public void Start()
     {
         healthBox = GetComponent<Text>();
+        
         healthBox = Text.FindObjectOfType<Text>();
         //healthBar = GetComponent<Sprite>();
     }

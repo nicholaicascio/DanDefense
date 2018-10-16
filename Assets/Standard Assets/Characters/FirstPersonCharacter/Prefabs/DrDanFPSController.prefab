@@ -2353,7 +2353,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1201494581719936}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: -6.1774216, y: -2.3765604e-17, z: 10.703075}
+  m_LocalPosition: {x: -13.120369, y: -1.984039e-17, z: 8.935317}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4848416583233424}
@@ -3253,7 +3253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponDamage: 10
-  range: 100
+  range: 5
   muzzleFlash: {fileID: 198177504879054082}
   fpsCam: {fileID: 20302720135467894}
 --- !u!114 &114982234320861758
@@ -3268,6 +3268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  healthBox: {fileID: 0}
 --- !u!124 &124422904701734746
 Behaviour:
   m_ObjectHideFlags: 1
