@@ -26,10 +26,15 @@ public class Gun : MonoBehaviour {
         {
             Debug.Log(hit.transform.name);
             Target target = hit.transform.GetComponent<Target>();
+            Box box = hit.transform.GetComponent<Box>();
 
             if (target != null)
             {
                 target.TakeDamage(weaponDamage);
+            }
+            if (box != null)
+            {
+                box.TakeDamage(weaponDamage);
             }
         }
     }
