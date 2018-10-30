@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour {
 
-    public float weaponDamage = 10f;
+    public int weaponDamage = 10;
     public float range = 100f;
     public ParticleSystem muzzleFlash;
 
@@ -25,12 +25,13 @@ public class Gun : MonoBehaviour {
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
-            Target target = hit.transform.GetComponent<Target>();
+            Health health = hit.transform.GetComponent<Health>();
             Box box = hit.transform.GetComponent<Box>();
 
-            if (target != null)
+            if (health != null)
             {
-                target.TakeDamage(weaponDamage);
+                health.TakeDamage(weaponDamage);
+                Debug.Log("hit");
             }
             if (box != null)
             {

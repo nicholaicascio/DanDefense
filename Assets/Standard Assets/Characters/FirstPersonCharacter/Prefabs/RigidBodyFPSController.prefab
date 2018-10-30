@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 114328718382640260}
   - component: {fileID: 95975946097057892}
   - component: {fileID: 114448620098122104}
+  - component: {fileID: 114983154353886780}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Untagged
@@ -66,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: -12.388911, y: -3.3363437e-17, z: 15.025557}
+  m_LocalPosition: {x: -12.197729, y: 2.44, z: 19.410053}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -1402,13 +1403,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71f382a05945a044eb8dc2a649316a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  healthBox: {fileID: 0}
 --- !u!114 &114448620098122104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1507,6 +1507,20 @@ MonoBehaviour:
   - {fileID: 11400004}
   - {fileID: 2000000}
   - {fileID: 114244347155073534}
+--- !u!114 &114983154353886780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7954dbf76dc61e44482aba77cbe1a689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  healthBar: {fileID: 114343830422872400, guid: 941eb6e45e561c040ad557a97b4c188d,
+    type: 2}
 --- !u!137 &137156531504640346
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

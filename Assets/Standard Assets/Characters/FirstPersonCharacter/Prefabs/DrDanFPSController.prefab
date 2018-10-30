@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 114982234320861758}
   - component: {fileID: 95889141557026638}
   - component: {fileID: 114643747167628288}
+  - component: {fileID: 114886485049752546}
   m_Layer: 0
   m_Name: DrDanFPSController
   m_TagString: Untagged
@@ -2353,7 +2354,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1201494581719936}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: -13.120369, y: -1.984039e-17, z: 8.935317}
+  m_LocalPosition: {x: -8.522356, y: -2.5028594e-17, z: 11.271876}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4848416583233424}
@@ -3241,6 +3242,20 @@ MonoBehaviour:
   rigidbodyFirstPersonController: {fileID: 114616610164243148}
   StrideInterval: 4
   RunningStrideLengthen: 0.722
+--- !u!114 &114886485049752546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1201494581719936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7954dbf76dc61e44482aba77cbe1a689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  healthBar: {fileID: 114343830422872400, guid: 941eb6e45e561c040ad557a97b4c188d,
+    type: 2}
 --- !u!114 &114957468012745320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3262,13 +3277,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1201494581719936}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71f382a05945a044eb8dc2a649316a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  healthBox: {fileID: 0}
 --- !u!124 &124422904701734746
 Behaviour:
   m_ObjectHideFlags: 1
