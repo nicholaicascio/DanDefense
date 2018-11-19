@@ -17,6 +17,11 @@ public class NetworkCustom : NetworkManager {
 
     public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId, NetworkReader extraMessageReader)
     {
+        //here I am taking the chosen character (based on buttons below)
+        //and then setting that equal to the selectedClass
+        //there is an array of the prefabs of possible classes
+        //so we take the class at that index in the array
+        //and that's what we spawn for the player prefab
         NetworkMessage message = extraMessageReader.ReadMessage<NetworkMessage>();
         int selectedClass = message.chosenClass;
         Debug.Log("server add with message " + selectedClass);
