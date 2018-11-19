@@ -13,6 +13,11 @@ public class Health : NetworkBehaviour
 
     public Text healthBar;
 
+    private void Start()
+    {
+        
+    }
+
     public void TakeDamage(int amount)
     {
         if (!isServer)
@@ -36,6 +41,7 @@ public class Health : NetworkBehaviour
     void OnChangeHealth(int health)
     {
         //healthBar.sizeDelta = new Vector2(health, healthBar.sizeDelta.y);
-        healthBar.text = health.ToString();
+        healthBar.text = currentHealth.ToString();
+        Debug.Log("got here");
     }
 }
