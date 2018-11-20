@@ -25,7 +25,7 @@ public class Gun : MonoBehaviour {
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
-            Health health = hit.transform.GetComponent<Health>();
+            healthv2 health = hit.transform.GetComponent<healthv2>();
             Box box = hit.transform.GetComponent<Box>();
 
             if (health != null)
