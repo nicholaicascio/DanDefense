@@ -31,6 +31,7 @@ public class Gun : MonoBehaviour {
             if (health != null)
             {
                 health.TakeDamage(weaponDamage);
+                health.CmdTakeDamage(weaponDamage);
                 Debug.Log("hit");
             }
             if (box != null)

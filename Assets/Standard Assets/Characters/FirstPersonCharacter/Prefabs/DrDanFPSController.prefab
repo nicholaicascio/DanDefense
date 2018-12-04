@@ -380,7 +380,6 @@ GameObject:
   - component: {fileID: 114982234320861758}
   - component: {fileID: 95889141557026638}
   - component: {fileID: 114643747167628288}
-  - component: {fileID: 114886485049752546}
   - component: {fileID: 114011344134056630}
   m_Layer: 0
   m_Name: DrDanFPSController
@@ -3412,20 +3411,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cde8fb79cc25d489c0d2839f7161d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114886485049752546
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1201494581719936}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7954dbf76dc61e44482aba77cbe1a689, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 100
-  healthBar: {fileID: 114343830422872400, guid: 941eb6e45e561c040ad557a97b4c188d,
-    type: 2}
 --- !u!114 &114957468012745320
 MonoBehaviour:
   m_ObjectHideFlags: 1

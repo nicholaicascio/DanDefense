@@ -37,7 +37,6 @@ GameObject:
   - component: {fileID: 114328718382640260}
   - component: {fileID: 95975946097057892}
   - component: {fileID: 114448620098122104}
-  - component: {fileID: 114983154353886780}
   - component: {fileID: 114490436703258690}
   m_Layer: 0
   m_Name: RigidBodyFPSController
@@ -1677,20 +1676,6 @@ MonoBehaviour:
   - {fileID: 11400004}
   - {fileID: 2000000}
   - {fileID: 114244347155073534}
---- !u!114 &114983154353886780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7954dbf76dc61e44482aba77cbe1a689, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 100
-  healthBar: {fileID: 114343830422872400, guid: 941eb6e45e561c040ad557a97b4c188d,
-    type: 2}
 --- !u!137 &137156531504640346
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
