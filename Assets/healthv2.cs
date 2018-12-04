@@ -39,7 +39,7 @@ public class healthv2 : NetworkBehaviour {
     [Command]
     public void CmdTakeDamage(int amount) //maybe take damage locally then call command take damage (this)
     {
-        if (isServer)
+        if (!isServer)
         {
             Debug.Log("Server taking damage");
             TakeDamage(amount);
