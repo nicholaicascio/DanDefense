@@ -27,6 +27,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400002}
+  - component: {fileID: 114965447581158430}
+  - component: {fileID: 114546219500491256}
   - component: {fileID: 5400000}
   - component: {fileID: 13600000}
   - component: {fileID: 11400004}
@@ -67,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: -12.197729, y: 2.44, z: 19.410053}
+  m_LocalPosition: {x: -3.7676895, y: 2.74, z: 7.950345}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -1530,6 +1532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d134fedeaab291469e3760bfb1f6c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 224375474187737742}
 --- !u!114 &114509211888790732
@@ -1553,6 +1556,17 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &114546219500491256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6cd2855803cb284ba8537dd9f68e10a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114622993425831474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1586,7 +1600,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1389277076753432}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 070ce2b99fe6d404dab1bd5c1003d714, type: 3}
   m_Name: 
@@ -1650,6 +1664,44 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114965447581158430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4b40a1746408248a5853adc98c24fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 95414935041210574}
+  animationBodyParts:
+  - {fileID: 1328039750984788}
+  - {fileID: 1733096664118592}
+  - {fileID: 1306789474773260}
+  - {fileID: 1852655090621462}
+  - {fileID: 1999143834374902}
+  - {fileID: 1200497173907870}
+  - {fileID: 1247502256925058}
+  - {fileID: 1752653114127278}
+  - {fileID: 1775323776750428}
+  - {fileID: 1470959392358202}
+  - {fileID: 1815628030631118}
+  - {fileID: 1719151756916972}
+  - {fileID: 1881981737343284}
+  - {fileID: 1137638207978994}
+  - {fileID: 1569549707343116}
+  - {fileID: 1501042626328420}
+  - {fileID: 1901724525254608}
+  - {fileID: 1201193860540678}
+  - {fileID: 1634594647726264}
+  - {fileID: 1397651566373884}
+  - {fileID: 1643401008080648}
+  - {fileID: 1000040300404552}
+  - {fileID: 1539438602709782}
+  - {fileID: 1792159333609274}
+  animState: idle
 --- !u!114 &114973469531253428
 MonoBehaviour:
   m_ObjectHideFlags: 1
