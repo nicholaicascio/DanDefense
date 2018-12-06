@@ -23,7 +23,6 @@ public class PlayerSetup : NetworkBehaviour {
             for(int i = 0; i < componetsToDisable.Length; i++)
             {
                 componetsToDisable[i].enabled = false;
-
             }
         }
         else

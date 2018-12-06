@@ -25,6 +25,7 @@ public class healthv2 : NetworkBehaviour {
         if (currentHealth <= 0)
         {
             currentHealth = 0;
+            Destroy(transform.gameObject);
             Debug.Log("dead");
         }
     }

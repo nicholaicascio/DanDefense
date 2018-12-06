@@ -1747,7 +1747,6 @@ MonoBehaviour:
   componetsToDisable:
   - {fileID: 11400004}
   - {fileID: 2000000}
-  - {fileID: 114244347155073534}
 --- !u!137 &137156531504640346
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

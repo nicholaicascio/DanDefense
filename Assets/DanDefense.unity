@@ -512,6 +512,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114978372953970930, guid: 5537fa447acaabf41ab80b2517e35668,
+        type: 2}
+      propertyPath: componetsToDisable.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5537fa447acaabf41ab80b2517e35668, type: 2}
       propertyPath: m_LocalPosition.x
       value: -3.7676895
@@ -544,9 +549,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114978372953970930, guid: 5537fa447acaabf41ab80b2517e35668,
+        type: 2}
+      propertyPath: componetsToDisable.Array.data[2]
+      value: 
+      objectReference: {fileID: 1406520070}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5537fa447acaabf41ab80b2517e35668, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1406520070 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114244347155073534, guid: 5537fa447acaabf41ab80b2517e35668,
+    type: 2}
+  m_PrefabInternal: {fileID: 1406520069}
+  m_Script: {fileID: 11500000, guid: 614388f1edffc3949a052e219e91047b, type: 3}
 --- !u!1 &1629187567 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1881842967145138, guid: 941eb6e45e561c040ad557a97b4c188d,
