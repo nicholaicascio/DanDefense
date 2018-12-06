@@ -30,11 +30,12 @@ public class healthv2 : NetworkBehaviour {
         }
     }
 
-    void OnChangeHealth(int currentHealth)
+    void OnChangeHealth(int hp)
     {
         //currentHealth -= 10;
         //healthBar.text = Health.ToString();
-        healthBar.sizeDelta = new Vector2(currentHealth * 2, healthBar.sizeDelta.y);
+        //currentHealth = hp;
+        healthBar.sizeDelta = new Vector2(hp * 2, healthBar.sizeDelta.y);
         Debug.Log("healthbar changed size");
     }
     [Command]
