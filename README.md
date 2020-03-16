@@ -1,6 +1,6 @@
 # Dan Defense
 
-This project was made fall 2018 during our winter break as a first forway into Unity multiplayer networking. It is an assymetrical shooter where one player is a hulking monster and three are hunters.
+This project was made fall 2018 during our winter break as a first foray into Unity multiplayer networking. It is an asymmetrical shooter where one player is a hulking monster and three are hunters.
 
 ## Getting Started
 
